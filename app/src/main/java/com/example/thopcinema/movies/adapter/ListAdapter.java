@@ -1,6 +1,8 @@
 package com.example.thopcinema.movies.adapter;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,6 +14,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.thopcinema.MainActivity;
 import com.example.thopcinema.R;
+import com.example.thopcinema.music.MusicActivity;
 
 public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ViewHolder>
 {
@@ -33,9 +36,18 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ViewHolder>
     }
 
     @Override
-    public void onBindViewHolder(@NonNull ListAdapter.ViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull ListAdapter.ViewHolder holder, @SuppressLint("RecyclerView") int position) {
         holder.textView.setText(""+name[position]);
         holder.imageView.setImageResource(image[position]);
+
+        holder.imageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(context , MusicActivity.class);
+                intent.putExtra("image",image[position]);
+                context.startActivity(intent);
+            }
+        });
     }
 
     @Override

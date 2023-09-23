@@ -69,7 +69,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
-    <LinearLayout
+    <HorizontalScrollView
         android:id="@+id/linearLayout2"
         android:layout_width="match_parent"
         android:layout_height="115dp"
@@ -78,23 +78,109 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView">
 
-        <ImageView
-            android:id="@+id/ivbolly"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_margin="5dp"
-            android:layout_weight="1"
-            android:src="@drawable/bolly" />
+            android:layout_height="match_parent">
 
-        <ImageView
-            android:id="@+id/ivholly"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_margin="5dp"
-            android:layout_weight="1"
-            android:src="@drawable/holly" />
+            <ImageView
+                android:id="@+id/ivbolly"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:src="@drawable/bolly" />
 
-    </LinearLayout>
+            <ImageView
+                android:id="@+id/ivholly"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:src="@drawable/holly" />
+
+            <ImageView
+                android:id="@+id/ivsouth"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:src="@drawable/southindian" />
+
+            <ImageView
+                android:id="@+id/ivaction"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:src="@drawable/action" />
+
+            <ImageView
+                android:id="@+id/ivadvanture"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:src="@drawable/adventure" />
+
+            <ImageView
+                android:id="@+id/ivcomedy"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:src="@drawable/comedy" />
+
+            <ImageView
+                android:id="@+id/ivdrama"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:src="@drawable/drama" />
+
+            <ImageView
+                android:id="@+id/ivfantasy"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:src="@drawable/fantasy" />
+
+            <ImageView
+                android:id="@+id/ivhorror"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:src="@drawable/horror" />
+
+            <ImageView
+                android:id="@+id/ivromance"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:src="@drawable/romance" />
+
+            <ImageView
+                android:id="@+id/ivscience"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:src="@drawable/scfifantasy" />
+
+            <ImageView
+                android:id="@+id/ivthriller"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:src="@drawable/thriller" />
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
 
     <TextView
         android:id="@+id/textView2"

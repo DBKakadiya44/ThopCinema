@@ -24,15 +24,8 @@ public class BollyHollyActivity extends AppCompatActivity {
 
         String pos = getIntent().getStringExtra("pos");
 
-        if(pos.equals("1")){
-            binding.bollyholly.setText("BollyWood");
-        }
-        if(pos.equals("2")){
-            binding.bollyholly.setText("HollyWood");
-        }
-        if(pos.equals("3")){
-            binding.bollyholly.setText("My Favourite");
-        }
+            binding.bollyholly.setText(""+pos);
+
 
         binding.ivBack.setOnClickListener(new View.OnClickListener() {
             @Override

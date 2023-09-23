@@ -6,17 +6,19 @@
     android:background="@color/main_bg"
     android:layout_height="match_parent">
 
-    <ImageView
+    <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/imageView"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="370dp"
+        android:scaleType="fitXY"
+        app:shapeAppearanceOverlay="@style/imageround"
         android:src="@drawable/dp"
-        android:scaleX="1.08"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
+        android:id="@+id/ivBack"
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:padding="7dp"

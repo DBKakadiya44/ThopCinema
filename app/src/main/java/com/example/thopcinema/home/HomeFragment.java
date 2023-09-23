@@ -51,7 +51,7 @@ public class HomeFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(mainActivity, BollyHollyActivity.class);
-                intent.putExtra("pos","1");
+                intent.putExtra("pos","Bollywood");
                 startActivity(intent);
             }
         });
@@ -60,7 +60,88 @@ public class HomeFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(mainActivity, BollyHollyActivity.class);
-                intent.putExtra("pos","2");
+                intent.putExtra("pos","Hollywood");
+                startActivity(intent);
+            }
+        });
+
+        binding.ivsouth.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(mainActivity, BollyHollyActivity.class);
+                intent.putExtra("pos","South Indian");
+                startActivity(intent);
+            }
+        });
+        binding.ivaction.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(mainActivity, BollyHollyActivity.class);
+                intent.putExtra("pos","Action");
+                startActivity(intent);
+            }
+        });
+        binding.ivadvanture.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(mainActivity, BollyHollyActivity.class);
+                intent.putExtra("pos","Adventure");
+                startActivity(intent);
+            }
+        });
+        binding.ivcomedy.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(mainActivity, BollyHollyActivity.class);
+                intent.putExtra("pos","Comedy");
+                startActivity(intent);
+            }
+        });
+        binding.ivdrama.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(mainActivity, BollyHollyActivity.class);
+                intent.putExtra("pos","Drama");
+                startActivity(intent);
+            }
+        });
+        binding.ivfantasy.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(mainActivity, BollyHollyActivity.class);
+                intent.putExtra("pos","Fantasy");
+                startActivity(intent);
+            }
+        });
+        binding.ivhorror.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(mainActivity, BollyHollyActivity.class);
+                intent.putExtra("pos","Horror");
+                startActivity(intent);
+            }
+        });
+        binding.ivromance.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(mainActivity, BollyHollyActivity.class);
+                intent.putExtra("pos","Romance");
+                startActivity(intent);
+            }
+        });
+        binding.ivscience.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(mainActivity, BollyHollyActivity.class);
+                intent.putExtra("pos","Sc-fi Fantasy");
+                startActivity(intent);
+            }
+        });
+        binding.ivthriller.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(mainActivity, BollyHollyActivity.class);
+                intent.putExtra("pos","Thriller");
                 startActivity(intent);
             }
         });

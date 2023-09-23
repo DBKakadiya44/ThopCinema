@@ -1,5 +1,6 @@
 package com.example.thopcinema.music;
 
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,6 +15,7 @@ import com.example.thopcinema.R;
 public class MusicAdapter extends RecyclerView.Adapter<MusicAdapter.ViewHolder>
 {
     MusicActivity musicActivity;
+    int[] image = {R.drawable.music3,R.drawable.music2,R.drawable.music1};
     public MusicAdapter(MusicActivity musicActivity) {
         this.musicActivity=musicActivity;
     }
@@ -28,17 +30,23 @@ public class MusicAdapter extends RecyclerView.Adapter<MusicAdapter.ViewHolder>
     @Override
     public void onBindViewHolder(@NonNull MusicAdapter.ViewHolder holder, int position) {
         if(position==0){
-            holder.imageView.setImageResource(R.drawable.music3);
             holder.textView.setText("Pushpa: The Rise");
         }
         if(position==1){
-            holder.imageView.setImageResource(R.drawable.music2);
             holder.textView.setText("Vikram");
         }
         if(position==2){
-            holder.imageView.setImageResource(R.drawable.music1);
             holder.textView.setText("Yashoda");
         }
+        holder.imageView.setImageResource(image[position]);
+        holder.imageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(musicActivity , MusicActivity.class);
+                intent.putExtra("image",image[position]);
+                musicActivity.startActivity(intent);
+            }
+        });
     }
 
     @Override

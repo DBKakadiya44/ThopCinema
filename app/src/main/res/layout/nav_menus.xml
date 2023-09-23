@@ -15,8 +15,8 @@
 
         <ImageView
             android:id="@+id/i1"
-            android:layout_width="25dp"
-            android:layout_height="25dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
             android:layout_gravity="center"
             android:layout_margin="7dp"
             android:src="@drawable/nm1" />
@@ -28,7 +28,7 @@
             android:layout_gravity="center"
             android:text="Home"
             android:textColor="@color/white"
-            android:textSize="16sp" />
+            android:textSize="14sp" />
 
     </LinearLayout>
 
@@ -45,8 +45,8 @@
 
         <ImageView
             android:id="@+id/i2"
-            android:layout_width="25dp"
-            android:layout_height="25dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
             android:layout_gravity="center"
             android:layout_margin="7dp"
             android:src="@drawable/nm2" />
@@ -58,7 +58,7 @@
             android:layout_gravity="center"
             android:text="My Favourite"
             android:textColor="@color/white"
-            android:textSize="16sp" />
+            android:textSize="14sp" />
 
     </LinearLayout>
 
@@ -75,8 +75,8 @@
 
         <ImageView
             android:id="@+id/i3"
-            android:layout_width="25dp"
-            android:layout_height="25dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
             android:layout_gravity="center"
             android:layout_margin="7dp"
             android:src="@drawable/nm3" />
@@ -88,7 +88,7 @@
             android:layout_gravity="center"
             android:text="More App"
             android:textColor="@color/white"
-            android:textSize="16sp" />
+            android:textSize="14sp" />
 
     </LinearLayout>
 
@@ -105,8 +105,8 @@
 
         <ImageView
             android:id="@+id/i4"
-            android:layout_width="25dp"
-            android:layout_height="25dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
             android:layout_gravity="center"
             android:layout_margin="7dp"
             android:src="@drawable/nm4" />
@@ -118,7 +118,7 @@
             android:layout_gravity="center"
             android:text="Privacy Policy"
             android:textColor="@color/white"
-            android:textSize="16sp" />
+            android:textSize="14sp" />
 
     </LinearLayout>
 
@@ -135,8 +135,8 @@
 
         <ImageView
             android:id="@+id/i5"
-            android:layout_width="25dp"
-            android:layout_height="25dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
             android:layout_gravity="center"
             android:layout_margin="7dp"
             android:src="@drawable/nm5" />
@@ -148,7 +148,7 @@
             android:layout_gravity="center"
             android:text="Share to Friend"
             android:textColor="@color/white"
-            android:textSize="16sp" />
+            android:textSize="14sp" />
 
     </LinearLayout>
 
@@ -165,8 +165,8 @@
 
         <ImageView
             android:id="@+id/i6"
-            android:layout_width="25dp"
-            android:layout_height="25dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
             android:layout_gravity="center"
             android:layout_margin="7dp"
             android:src="@drawable/nm6" />
@@ -178,7 +178,7 @@
             android:layout_gravity="center"
             android:text="Feedback"
             android:textColor="@color/white"
-            android:textSize="16sp" />
+            android:textSize="14sp" />
 
     </LinearLayout>
 
@@ -198,6 +198,10 @@
         android:layout_height="match_parent"
         android:layout_weight="1" />
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"

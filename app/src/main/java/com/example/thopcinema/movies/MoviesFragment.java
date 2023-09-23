@@ -39,13 +39,6 @@ public class MoviesFragment extends Fragment {
 
         binding = FragmentMoviesBinding.inflate(inflater,container,false);
 
-        binding.Musicmenu.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(mainActivity , MusicActivity.class);
-                mainActivity.startActivity(intent);
-            }
-        });
 
         ListAdapter adapter = new ListAdapter(mainActivity, image, name);
         RecyclerView.LayoutManager manager = new GridLayoutManager(mainActivity,3);
